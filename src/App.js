@@ -4,23 +4,24 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="header"></div>
+      <div className="body">
+        <div className="js-clock">
+          <h1>
+            Time
+          </h1>
+          <form className="js-form form">
+            <input className="name" type="text" placeholder="What is your name?"></input>
+          </form>
+          <h2 className="js-greeting"></h2>
+        </div>
+      </div>
+      <div className="footer"></div>
     </div>
   );
 }
+
+
 
 export default App;
